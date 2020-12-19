@@ -22,6 +22,10 @@ from django.views.generic import ListView
 #     return render(request,'home.html', context)
 
 def home(request):
+    # 주석은 혼자 정리하려고 적어놓은거니 지우셔도 상관없습니다
+    # 혹시 주석이나 코드에 잘못된 부분이 있으면 기재해주시거나 알려주시면 감사하겠습니다
+    # 깃은 초대해드렸으니 진행 시 풀리퀘해주시면 됩니다
+
     # 버튼을 누를때마다 이 print문이 실행되는 것을 볼 수 있다
     # 즉, 버튼을 누를때마다 여기로 와서 '다음페이지를 가져와/이전 페이지를 가져와/...' 하는 요청이 여기로 들어오는 것 을 알 수 있음
     print('home')
