@@ -25,7 +25,7 @@ def home(request):
     numbers=range(0,1000)
     paginator=Paginator(numbers,25)
 
-    page_num=request.GET.get('page')
+    page_num=request.GET.get('page',1)
     page_obj=paginator.get_page(page_num)
 
     context={
