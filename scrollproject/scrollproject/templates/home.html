@@ -16,5 +16,14 @@
 </html>
 
 <script>
-    console.log('scroll_page')
+    document.addEventListener("DOMcontentLoaded",() => {
+        let sentinel = document.getElementById("sentinel");
+        let observer = new IntersectionObserver((entries) => {
+            entry = entries[0];
+            if (entry.intersetctionRatio > 0){
+                alert("This happened");
+            }
+        })
+        observer.observe(sentinel);
+    } )
 </script>
